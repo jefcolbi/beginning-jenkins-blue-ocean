@@ -4,7 +4,7 @@ pipeline {
     stage('Test & Build') {
       agent {
         node {
-          label 'docker'
+          label 'zouktil'
         }
 
       }
@@ -18,7 +18,7 @@ pipeline {
     stage('Report & Publish') {
       agent {
         node {
-          label 'docker'
+          label 'zouktil'
         }
 
       }
